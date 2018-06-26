@@ -14,39 +14,78 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>WEB LEILÃO</title>
+    <title>Web Leilão</title>
 
-    <!-- Bootstrap Core CSS -->
+    <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom Fonts -->
+    <!-- Custom fonts for this template -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
-    <!-- Custom CSS -->
-    <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/clean-blog.min.css" rel="stylesheet">
 
   </head>
     <body>
-        <header class="masthead d-flex">
-        <div class="container text-center my-auto">
-        <h1 class="mb-1">Web Leilão</h1>
-        <h3 class="mb-5">
-          <%@include file="WEB-INF/jspf/cabecalho.jspf" %>
-        </h3>
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="home.jsp">Web Leilão</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="home.jsp">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="arrematar.jsp">Arrematar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="central-ctrl.jsp">Controle</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="comprar-saldo.jsp">Saldo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="leiloar.jsp">Leiloar</a>
+            </li>
+          </ul>
         </div>
-        <div class="overlay"></div>
-        </header>
-        <section class="content-section bg-light" id="about">
-            <div class="container text-center">
-                <div class="row">
-                    <div class="col-lg-10 mx-auto">
-                        <h2>Bem vindo ao Web Leilão</h2>
-                        <p class="lead mb-5">Leilões acontecendo gora:
-                    </div>
-                </div>
+      </div>
+    </nav>
+      <header class="masthead" style="background-image: url('img/home-bg.jpg')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="site-heading">
+              <%@include file="WEB-INF/jspf/login.jspf" %>
             </div>
-        </section>
+          </div>
+        </div>
+      </div>
+      </header>
+      <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-preview">
+            <center>
+            <h2 class="post-title">
+                Bem vindo ao Web Leilão
+            </h2>
+            <h3 class="post-subtitle">
+                Leilões acontecendo agora:
+            </h3>
+            </center>
+          </div>
+          <hr>
+        </div>
+      </div>
+    </div>    
+          
     </body>
 </html>
