@@ -42,16 +42,16 @@
               <a class="nav-link" href="home.jsp">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="arrematar.jsp">Arrematar</a>
+              <a class="nav-link" href="usuario/arrematar.jsp">Arrematar</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="central-ctrl.jsp">Controle</a>
+              <a class="nav-link" href="usuario/central-ctrl.jsp">Controle</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="comprar-saldo.jsp">Saldo</a>
+              <a class="nav-link" href="usuario/comprar-saldo.jsp">Saldo</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="leiloar.jsp">Leiloar</a>
+              <a class="nav-link" href="usuario/leiloar.jsp">Leiloar</a>
             </li>
           </ul>
         </div>

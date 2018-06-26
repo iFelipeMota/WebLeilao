@@ -14,24 +14,24 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Web Leilão</title>
+    <title>Web Leilão | Leiloar</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
     <!-- Custom styles for this template -->
-    <link href="css/clean-blog.min.css" rel="stylesheet">
+    <link href="../css/clean-blog.min.css" rel="stylesheet">
 
   </head>
     <body>
       <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand" href="home.jsp">Web Leilão | Leiloar</a>
+        <a class="navbar-brand" href="home.jsp">Web Leilão</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -39,19 +39,19 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="home.jsp">Home</a>
+              <a class="nav-link" href="../home.jsp">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="usuario/arrematar.jsp">Arrematar</a>
+              <a class="nav-link" href="arrematar.jsp">Arrematar</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="usuario/central-ctrl.jsp">Controle</a>
+              <a class="nav-link" href="central-ctrl.jsp">Controle</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="usuario/comprar-saldo.jsp">Saldo</a>
+              <a class="nav-link" href="comprar-saldo.jsp">Saldo</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="usuario/leiloar.jsp">Leiloar</a>
+              <a class="nav-link" href="leiloar.jsp">Leiloar</a>
             </li>
           </ul>
         </div>
@@ -63,7 +63,7 @@
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
             <div class="site-heading">
-              <%@include file="WEB-INF/jspf/login.jspf" %>
+              <%@include file="../WEB-INF/jspf/login.jspf" %>
             </div>
           </div>
         </div>
