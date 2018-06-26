@@ -53,11 +53,14 @@
             <li class="nav-item">
               <a class="nav-link" href="leiloar.jsp">Leiloar</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../equipe.jsp">Sobre Nós</a>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
-      <header class="masthead" style="background-image: url('img/home-bg.jpg')">
+      <header class="masthead" style="background-image: url('../img/home-bg.jpg')">
       <div class="overlay"></div>
       <div class="container">
         <div class="row">
