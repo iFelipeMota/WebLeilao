@@ -26,7 +26,7 @@
     </head>
     <body>
         <%@include file="../WEB-INF/jspf/cabecalho.jspf" %>
-        <h1>Arrematar</h1>
+        <h1>Arrematar </h1>
         <%
             ArrayList<Leilao> listLeiloes = new ArrayList<Leilao>();
             listLeiloes = Leilao.getLeiloes();
