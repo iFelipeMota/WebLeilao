@@ -11,10 +11,12 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <%
+  User usuario = (User) session.getAttribute("user");
+  
   if(request.getParameter("formDarLance")!=null){
         double lance = Double.parseDouble(request.getParameter("lance"));
         long idLeilao = Long.parseLong(request.getParameter("id"));
-        Long idUser = (long)10;
+        Long idUser = usuario.getId();
         Lance.darLance(idLeilao, idUser, lance);
         response.sendRedirect(request.getRequestURI());
    }  

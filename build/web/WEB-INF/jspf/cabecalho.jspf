@@ -47,7 +47,6 @@
         <a href="<%=path%>/home.jsp">Home</a>
         || <a href="<%=path%>/usuario/arrematar.jsp">Arrematar</a>
         || <a href="<%=path%>/usuario/central-ctrl.jsp">Central</a>
-        || <a href="<%=path%>/usuario/comprar-saldo.jsp">Comprar</a>
         || <a href="<%=path%>/usuario/leiloar.jsp">Leiloar</a>
         <%if(user.getRole().equals("ADMIN")){%>
         || [<a href="<%=path%>/admin/ctrl-usuarios.jsp">Usuários</a>]

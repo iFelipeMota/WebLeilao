@@ -14,7 +14,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <%
-    Usuario user = (Usuario) session.getAttribute("user");
+    User usuario = (User) session.getAttribute("user");
     
     String error = null; 
     Leilao l = new Leilao();
@@ -25,7 +25,7 @@
     
     if(request.getParameter("formSalvarLeilao")!=null){
        double vlInicial = Double.parseDouble(request.getParameter("vlInicial"));
-       Long idLeiloeiro = (long)10;
+       Long idLeiloeiro = usuario.getId() ;
        String fim = request.getParameter("fim");
        String lote = String.valueOf(idLeiloeiro.hashCode())+ String.valueOf(new Timestamp(new Date().getTime()).hashCode());
        try{
@@ -38,7 +38,7 @@
     
     if(request.getParameter("formIniciarLeilao")!=null){
        double vlInicial = Double.parseDouble(request.getParameter("vlInicial"));
-       Long idLeiloeiro = (long)10;//alterar para user.getId
+       Long idLeiloeiro = usuario.getId();//alterar para user.getId
        String fim = request.getParameter("fim");
        String lote = String.valueOf(idLeiloeiro.hashCode())+ String.valueOf(new Timestamp(new Date().getTime()).hashCode());
        try{

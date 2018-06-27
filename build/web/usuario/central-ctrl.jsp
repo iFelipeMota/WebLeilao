@@ -13,7 +13,8 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <%
-  Long idUser = (long)10;
+  User usuario = (User) session.getAttribute("user");
+  Long idUser = usuario.getId();
   if(request.getParameter("formDeleteLeilao")!=null){
         long idLeilao = Long.parseLong(request.getParameter("id"));
         Leilao.deleteLeilao(idLeilao);
