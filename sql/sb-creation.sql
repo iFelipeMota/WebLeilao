@@ -1,4 +1,3 @@
-DROP Table usuario;
 CREATE TABLE usuario(
     id BIGINT  not null primary key
         GENERATED ALWAYS AS IDENTITY
@@ -14,19 +13,17 @@ INSERT INTO usuario VALUES
 INSERT INTO usuario VALUES
 (default, 'USUARIO', 'Testador da Silva', 'teste', 1509442, 0);
 
-DROP Table leilao;
 CREATE TABLE leilao(
     id BIGINT not null primary key
         GENERATED ALWAYS AS IDENTITY
         (START WITH 1, INCREMENT BY 1)
     , id_leiloeiro BIGINT
     , inicio TIMESTAMP
-    , fim varchar(200) not null
+    , fim DATE not null
     , lote varchar(200)
     , vl_min DOUBLE PRECISION not null
 );
 
-DROP Table bem;
 CREATE TABLE bem(
     id BIGINT  not null primary key
         GENERATED ALWAYS AS IDENTITY
@@ -35,7 +32,6 @@ CREATE TABLE bem(
     , categoria varchar(200)
 );
 
-DROP Table lote;
 CREATE TABLE lote(
     id BIGINT  not null primary key
         GENERATED ALWAYS AS IDENTITY
@@ -44,7 +40,6 @@ CREATE TABLE lote(
     , id_bem BIGINT not null
 );
 
-DROP Table lance;
 CREATE TABLE lance(
     id BIGINT not null primary key
         GENERATED ALWAYS AS IDENTITY
@@ -55,7 +50,6 @@ CREATE TABLE lance(
     , lance DOUBLE PRECISION not null
 );
 
-DROP Table venda;
 CREATE TABLE venda(
     id BIGINT not null primary key
         GENERATED ALWAYS AS IDENTITY
@@ -65,7 +59,6 @@ CREATE TABLE venda(
     , id_lance BIGINT not null
 );
 
-DROP Table credito;
 CREATE TABLE credito(
     id BIGINT not null primary key
         GENERATED ALWAYS AS IDENTITY
