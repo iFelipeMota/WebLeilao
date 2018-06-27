@@ -12,7 +12,7 @@
         <title>Dar Lance</title>
     </head>
     <body>
-        <%@include file="WEB-INF/jspf/cabecalho.jspf" %>
+        <%@include file="../WEB-INF/jspf/cabecalho.jspf" %>
         <h1>Arrematar</h1>
     </body>
 </html>

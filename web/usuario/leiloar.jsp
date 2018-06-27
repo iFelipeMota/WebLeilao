@@ -12,7 +12,7 @@
         <title>Leiloar Bem</title>
     </head>
     <body>
-        <%@include file="WEB-INF/jspf/cabecalho.jspf" %>
+        <%@include file="../WEB-INF/jspf/cabecalho.jspf" %>
         <h1>Leiloe algo seu</h1>
     </body>
 </html>

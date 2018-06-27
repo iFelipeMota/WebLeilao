@@ -12,7 +12,7 @@
         <title>Painel de Controle</title>
     </head>
     <body>
-        <%@include file="WEB-INF/jspf/cabecalho.jspf" %>
+        <%@include file="../WEB-INF/jspf/cabecalho.jspf" %>
         <h1>Painel de Controle!</h1>
     </body>
 </html>

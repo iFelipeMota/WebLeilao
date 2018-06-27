@@ -12,7 +12,7 @@
         <title>Comprar Créditos</title>
     </head>
     <body>
-        <%@include file="WEB-INF/jspf/cabecalho.jspf" %>
+        <%@include file="../WEB-INF/jspf/cabecalho.jspf" %>
         <h1>Comprar Créditos</h1>
     </body>
 </html>
